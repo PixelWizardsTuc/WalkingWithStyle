@@ -8,7 +8,6 @@ NuGet packages:
 * Microsoft.EntityFrameworkCore.SqlServer (8.0.3)
 
 #DB:
-=================================================================================================================================
 -- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/bxmdCI
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
@@ -156,12 +155,10 @@ REFERENCES [Users] ([UserID])
 ALTER TABLE [ForumPosts] CHECK CONSTRAINT [FK_ForumPosts_UserID]
 
 COMMIT TRANSACTION QUICKDBD
-=================================================================================================================================
 
 
 
 #Make a new query and add the following data then execute:
-=================================================================================================================================
 USE WalkingWithStyle;
 
 
@@ -227,4 +224,3 @@ VALUES
     (58, 'Vans Shoes', 'Beskrivning av Vans Shoes', 335.00, '~/images/vans-shoes-5244832_640.jpg', 236),
     (59, 'Woman Shoes', 'Beskrivning av Woman Shoes', 340.00, '~/images/woman-2609573_640.jpg', 241),
     (60, 'Woman Shoes', 'Beskrivning av Woman Shoes', 345.00, '~/images/woman-3377839_640.jpg', 246);
-=============================================================================================================================

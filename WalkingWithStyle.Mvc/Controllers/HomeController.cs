@@ -23,6 +23,11 @@ namespace WalkingWithStyle.Mvc.Controllers
             return View();
         }
 
+        public IActionResult Shoes()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

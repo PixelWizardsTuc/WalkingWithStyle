@@ -34,17 +34,7 @@ namespace WalkingWithStyle.Mvc.Data
         // DbSet för ForumPosts-tabellen
         public DbSet<ForumPosts> ForumPosts { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            // Konfiguration för primärnycklar
-            modelBuilder.Entity<Users>().HasKey(u => u.UserID);
-            modelBuilder.Entity<Customers>().HasKey(c => c.UserID);
-            modelBuilder.Entity<Orders>().HasKey(o => o.OrderID);
-            modelBuilder.Entity<ShoppingCart>().HasKey(s => s.CartID);
-            modelBuilder.Entity<OrderDetails>().HasKey(od => od.ODID);
-            modelBuilder.Entity<Products>().HasKey(p => p.ProductID);
 
-        }
     }
 
     public class Customers

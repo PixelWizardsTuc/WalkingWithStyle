@@ -1,13 +1,13 @@
 # WalkingWithStyle
 
-NuGet packages:
+## NuGet packages:
 * DocumentFormat.OpenXml (3.0.2)
 * Microsoft.EntityFrameworkCore (8.0.3)
 * Microsoft.EntityFrameworkCore.Design (8.0.3)
 * Microsoft.EntityFrameworkCore.Tool (8.0.3)
 * Microsoft.EntityFrameworkCore.SqlServer (8.0.3)
 
-#DB:
+# DB:
 -- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/bxmdCI
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
@@ -158,7 +158,7 @@ COMMIT TRANSACTION QUICKDBD
 
 
 
-#Make a new query and add the following data then execute:
+## Make a new query and add the following data then execute:
 USE WalkingWithStyle;
 
 

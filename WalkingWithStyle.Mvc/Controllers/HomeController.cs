@@ -1,12 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WalkingWithStyle.Mvc.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Components.Forms;
+using WalkingWithStyle.Mvc;
+using WalkingWithStyle.Mvc.Data;
+using System.Collections.Generic;
 
 namespace WalkingWithStyle.Mvc.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private object _dbContext;
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -15,7 +21,9 @@ namespace WalkingWithStyle.Mvc.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var model = new ProductsViewModel();
+            model.Products = GetProductsFromDatabase();  
+            return View(model); 
         }
 
         public IActionResult Privacy()
@@ -24,6 +32,16 @@ namespace WalkingWithStyle.Mvc.Controllers
         }
 
         public IActionResult Shoes()
+        {
+            return View();
+        }
+
+        private List<Product> GetProductsFromDatabase()
+        {
+            return Products.ToString().Split(',').ToList();
+        }
+
+        public IActionResult ProductDetail(int id)
         {
             return View();
         }

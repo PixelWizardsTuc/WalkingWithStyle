@@ -1,4 +1,5 @@
-﻿namespace WalkingWithStyle.Mvc.Models
+﻿
+namespace WalkingWithStyle.Mvc.Models
 {
     public class Product
     {
@@ -10,6 +11,8 @@
     public class ProductsViewModel
     {
         public List<Product> Products { get; set; }
+
+        //public static implicit operator ProductsViewModel(ProductsViewModel v) => throw new NotImplementedException();
     }
 
 }

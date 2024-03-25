@@ -22,7 +22,7 @@ namespace WalkingWithStyle.Mvc.Controllers
         public IActionResult Index()
         {
             var model = new ProductsViewModel();
-            model.Products = GetProductsFromDatabase();  
+            //model.Products = GetProductsFromDatabase();  
             return View(model); 
         }
 
@@ -36,10 +36,10 @@ namespace WalkingWithStyle.Mvc.Controllers
             return View();
         }
 
-        private List<Product> GetProductsFromDatabase()
-        {
-            return Products.ToString().Split(',').ToList();
-        }
+        //private List<Product> GetProductsFromDatabase()
+        //{
+        //    return Products.ToString().Split(',').ToList();
+        //}
 
         public IActionResult ProductDetail(int id)
         {

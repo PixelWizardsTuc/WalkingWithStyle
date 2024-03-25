@@ -10,29 +10,29 @@ namespace WalkingWithStyle.Mvc.Data
         {
         }
 
-        // DbSet för Users-tabellen
+        // DbSet for Users-table
         public DbSet<Users> Users { get; set; }
 
-        // DbSet för Customers-tabellen
+        // DbSet for Customers-table
         public DbSet<Customers> Customers { get; set; }
 
-        // DbSet för Orders-tabellen
-        public DbSet<Orders> Orders { get; set; }
+        // DbSet for Orders-table
+        //public DbSet<Orders> Orders { get; set; }
 
-        // DbSet för ShoppingCart-tabellen
-        public DbSet<ShoppingCart> ShoppingCart { get; set; }
+        //// DbSet for ShoppingCart-table
+        //public DbSet<ShoppingCart> ShoppingCart { get; set; }
 
-        // DbSet för OrderDetails-tabellen
-        public DbSet<OrderDetails> OrderDetails { get; set; }
+        //// DbSet for OrderDetails-table
+        //public DbSet<OrderDetails> OrderDetails { get; set; }
 
-        // DbSet för Products-tabellen
-        public DbSet<Products> Products { get; set; }
+        //// DbSet for Products-table
+        //public DbSet<Products> Products { get; set; }
 
-        // DbSet för ForumThreads-tabellen
-        public DbSet<ForumThreads> ForumThreads { get; set; }
+        //// DbSet for ForumThreads-table
+        //public DbSet<ForumThreads> ForumThreads { get; set; }
 
-        // DbSet för ForumPosts-tabellen
-        public DbSet<ForumPosts> ForumPosts { get; set; }
+        //// DbSet for ForumPosts-table
+        //public DbSet<ForumPosts> ForumPosts { get; set; }
 
 
     }

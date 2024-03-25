@@ -11,13 +11,55 @@
 <body>
     <header>
         <div class="align-content-sm-start">  
-            <img src="~/images/wws.webp" class="img-fluid" />
+            <img src="~/images/banner2.png" class="img-fluid" />
         </div>
+
+        <!-- Navbar -->
+@*         <nav class="navbar navbar-expand-lg bg-info navbar-dark">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Navbar brand -->
+                <img class="navbar-brand" height="100px" width="auto" src="~/images/wws.webp" />
+                <a class="navbar-brand" href="#">Walking With Style</a>
+
+                <!-- Icons -->
+                <ul class="navbar-nav d-flex flex-row me-1">
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Shoes">Shoes</a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                           data-mdb-toggle="dropdown" aria-expanded="false"> <i class="fas fa-user mx-1"></i> Profile </a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">My account</a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">Log out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Container wrapper -->
+        </nav> *@
+        <!-- Navbar -->
 
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WalkingWithStyle.Mvc</a>
+
+                <img class="navbar-brand" height="100px" width="auto" src="~/images/wws.webp" />
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Walking With Style</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,7 +79,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> 
     </header>
     <div class="container">
         <main role="main" class="pb-3">
